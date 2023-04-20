@@ -8,4 +8,16 @@
     box-sizing:border-box;
   }
   
-  
+  html{
+    font-size: 62.7%;
+}
+
+.tit-sec{
+    text-align: center;
+    font-size: 5rem;
+}
+
+
+
+
+
