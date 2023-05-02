@@ -8,27 +8,38 @@
     <title>My Layout</title>
     <link rel="stylesheet" href="./css/estilo.css">
 
-    <script>
-
-        //COMENTÁRIO DE LINHA
-
-        /*
-            COMENTÁRIO DE BLOCO
-        */
-
-        //Declarando variáveis com a palavra reservada ( var )
-        var nr1 = 10;
-        var nr2 = 5;
-
-        //Objetos que dão saida em informações no Javascript
-
-        //console.log(parâmetro) = Demonstra a saída no console da ferramenta do desenvolvedor.
-        console.log(nr1 + nr2);
-        
-        //document.write(parâmetro) = Demonstra a saída na página html.
-        document.write(nr1 + nr2);
-    </script>
+    <script src="./js/script.js" defer></script>
     
+    
+    
+    <!-- <script>
+
+    //     //COMENTÁRIO DE LINHA
+
+    //     /*
+    //         COMENTÁRIO DE BLOCO
+    //     */
+
+    //     //Declarando variáveis com a palavra reservada ( var )
+    //     //var nr1 = 10;
+    //     //var nr2 = 5;
+
+    //     //Objetos que dão saida em informações no Javascript
+
+    //     //console.log(parâmetro) = Demonstra a saída no console da ferramenta do desenvolvedor.
+    //     //console.log(nr1 + nr2);
+        
+    //     //document.write(parâmetro) = Demonstra a saída na página html.
+    //     //document.write(nr1 + nr2);
+    
+    //     //const h2Element = document.getElementById("titulo");
+
+    //     //console.log(h2Element);
+
+
+    
+    //</script>-->
+
 </head>
 
 <body>
@@ -42,7 +53,12 @@
         </nav>
     </header>
 
-    <h2 class="tit-sec">Seção Fotos</h2>
+    <h2 id="titulo" class="tit-sec">Seção Fotos</h2>
+
+    <!-- <script>
+        //const h2Element = document.getElementById("titulo");
+        //console.log(h2Element);
+    </script> -->
 
     <section class="conteudo">
         <div>
@@ -84,21 +100,30 @@
             <form action="/apelido" method="get" onsubmit="return true">
                 <fieldset>
                     <legend>Contato</legend>
+                    
                     <div>
                         <label for="idEmail">Email</label>
                         <input type="email" name="txtEmail" id="idEmail" required placeholder="Email">
                     </div>
+                    
                     <div>
-                        <label for="idNome">Nome</label>
-                        <input type="text" name="txtNome" id="idNome" required placeholder="Nome">
+                        <label for="idPass">Senha</label>
+                        <input type="password" name="txtPass" id="idPass" required placeholder="Senha">
                     </div>
+                    <div>
+                        <label for="idGrava">Guardar Dados</label>
+                        <input type="checkbox" name="txtGrava" id="idGrava" required>
+                    </div>
+                    
                     <div>
                         <input type="submit" value="Enviar">
                     </div>
+                
                 </fieldset>
+            
             </form>
+        
         </div>
-
 
     </footer>
    
