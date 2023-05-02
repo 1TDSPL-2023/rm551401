@@ -9,7 +9,7 @@
 .cabecalho nav{
     display: flex;
     justify-content: space-around;
-    width: 60vh;
+    width: 115vh;
     height: 45vh;
     flex-wrap: wrap;
 }
