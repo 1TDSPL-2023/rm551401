@@ -61,3 +61,8 @@ function showMessage() {
 }
 
 
+function hideImg() {
+
+    document.getElementById("lobo").style.display = "nones";
+}
+
