@@ -50,3 +50,14 @@ function showImage() {
     }
 
 }
+
+
+function showMessage() {
+
+    var p = document.getElementById("message");
+    p.innerHTML = "Tenha um bom dia!"
+
+
+}
+
+
