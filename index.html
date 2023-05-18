@@ -8,42 +8,44 @@
     <title>My Layout</title>
     <link rel="stylesheet" href="./css/estilo.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="./js/script.js" defer></script>
-    
-    
-    
-    <!-- <script>
 
-    //     //COMENTÁRIO DE LINHA
+    <script>
 
-    //     /*
-    //         COMENTÁRIO DE BLOCO
-    //     */
+        //COMENTÁRIO DE LINHA
 
-    //     //Declarando variáveis com a palavra reservada ( var )
-    //     //var nr1 = 10;
-    //     //var nr2 = 5;
+        /*
+            COMENTÁRIO DE BLOCO
+        */
 
-    //     //Objetos que dão saida em informações no Javascript
+        //Declarando variáveis com a palavra reservada ( var )
+        // var nr1 = 10;
+        // var nr2 = 5;
 
-    //     //console.log(parâmetro) = Demonstra a saída no console da ferramenta do desenvolvedor.
-    //     //console.log(nr1 + nr2);
+        //Objetos que dão saida em informações no Javascript
+
+        //console.log(parâmetro) = Demonstra a saída no console da ferramenta do desenvolvedor.
+        // console.log(nr1 + nr2);
         
-    //     //document.write(parâmetro) = Demonstra a saída na página html.
-    //     //document.write(nr1 + nr2);
-    
-    //     //const h2Element = document.getElementById("titulo");
+        //document.write(parâmetro) = Demonstra a saída na página html.
+        // document.write(nr1 + nr2);
 
-    //     //console.log(h2Element);
+        //Atrelando um evento click à um elemento no HTML.
+        //<h2 id="titulo" class="tit-sec">Seção Fotos</h2>
+        // const h2Element = document.getElementById("titulo");
 
+        // console.log(h2Element.textContent);
 
-    
-    //</script>-->
+    </script>
 
 </head>
 
 <body>
 
+    <!-- CABEÇALHO -->
+    <!-- header>img+nav>a*3[href=#]{Item-$} -->
     <header class="cabecalho">
         <img src="./img/logo.png" alt="Monitor de computador.">
         <nav>
@@ -51,15 +53,19 @@
             <a href="#">Item-2</a>
             <a href="#">Item-3</a>
         </nav>
+
     </header>
+    <!-- CABEÇALHO -->
 
     <h2 id="titulo" class="tit-sec">Seção Fotos</h2>
 
     <!-- <script>
-        //const h2Element = document.getElementById("titulo");
-        //console.log(h2Element);
+        const h2Element = document.getElementById("titulo");
+        console.log(h2Element.textContent);
     </script> -->
 
+    <!-- CONTEÚDO -->
+    <!-- section.conteudo>div*6>img+p{Legenda}
     <section class="conteudo">
         <div>
             <img src="./img/lobo1.jpg" alt="Lobo">
@@ -85,49 +91,45 @@
             <img src="./img/lobo6.jpg" alt="Lobo">
             <p>Legenda</p>
         </div>
-    </section>
-   
+    </section> -->
+    <!-- CONTEÚDO -->
+
+    <!-- RODAPÉ -->
     <footer class="rodape">
         <h2>Fale Conosco</h2>
+
+        <div>
+            <form action="index.html" method="get" onsubmit="return false">
+                <fieldset>
+                    <legend>Entrar</legend>
+                    <div>
+                        <label for="idEmail">Email</label>
+                        <input type="email" name="txtEmail" id="idEmail" placeholder="Email" pattern="[A-Za-z0-9]">
+                    </div>
+                    <div>
+                        <label for="idPass">Senha</label>
+                        <input type="password" name="txtPass" id="idPass" placeholder="Senha">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <label for="idGrava">Guardar Dados</label>
+                        <input type="checkbox" name="txtGrava" id="idGrava">
+                    </div>
+                    <div>
+                        <button type="submit" id="btnSubmit">Entrar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
         <nav>
             <a href="#"><img src="./img/social-1.png" alt="Logo github"></a>
             <a href="#"><img src="./img/social-2.png" alt="Logo facebook"></a>
             <a href="#"><img src="./img/social-3.png" alt="Logo twitter"></a>
         </nav>
-        
-        
-        <div>
-            <form action="/apelido" method="get" onsubmit="return true">
-                <fieldset>
-                    <legend>Contato</legend>
-                    
-                    <div>
-                        <label for="idEmail">Email</label>
-                        <input type="email" name="txtEmail" id="idEmail" required placeholder="Email">
-                    </div>
-                    
-                    <div>
-                        <label for="idPass">Senha</label>
-                        <input type="password" name="txtPass" id="idPass" required placeholder="Senha">
-                    </div>
-                    <div>
-                        <label for="idGrava">Guardar Dados</label>
-                        <input type="checkbox" name="txtGrava" id="idGrava" required>
-                    </div>
-                    
-                    <div>
-                        <input type="submit" value="Enviar">
-                    </div>
-                
-                </fieldset>
-            
-            </form>
-        
-        </div>
 
     </footer>
-   
-
+    <!-- RODAPÉ -->
 </body>
 
 </html>
